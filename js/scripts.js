@@ -6,8 +6,8 @@ $(document).ready(function() {
     const city = $("input#city").val();
     
     const arrayFavs = [food, color, city];
-    
-
-
+    const newArray =[];
+    newArray.push(arrayFavs);
+    $("ul#results").append("<li>" + newArray[0] + "</li>");
   });
 });
